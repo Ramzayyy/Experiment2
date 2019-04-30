@@ -1,0 +1,22 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	int f1 = 0;
+	int f2 = 1;
+	int  i;
+	int fnext;
+	
+	cout << "The Fibonacci sequence is: " << f1 << ","  << f2 << ",";
+	
+	for (i = 1; i <= 20; i++)
+	{
+		fnext  = f1+f2;
+		f1=f2;
+		f2=fnext;
+		cout << fnext << ",";
+	 } 
+	 return 0;
+}
