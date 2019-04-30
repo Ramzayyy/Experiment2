@@ -1,0 +1,43 @@
+#include<iostream>
+using namespace std;
+ int main ()
+ {
+ 	char pkg;
+	int total,hours,h; 
+ 	
+	{
+	cout << "Choose your package" << endl;
+ 	cout << "Package A 995/mo with 10 hrs of internet plus 20 per hour exceeded" << endl;
+ 	cout << "Package B 1495/mo with 20 hrs of internet plus 10 per hour exceeded" << endl;
+ 	cout << "Package C 1995/mo with unlimited of internet" << endl;
+	 cin >> pkg;
+ 	cout << "Input hours consumed" << endl;
+ 	cin >> hours;
+ 	
+ 	if (pkg!='A'&& pkg!='B'&&  pkg!='C')
+ 	{
+ 		cout << "Please enter letters from A to C." << endl;
+	 }
+	switch(pkg)
+	{
+		case 'A':
+			h=hours-10;
+			total=995+(20*h);
+			cout << total << endl;
+	
+	break;
+	
+		case 'B':
+			h=hours-20;
+			total=1495+(10*h);
+			cout << total << endl;
+	
+	break;
+	
+		case 'C':
+			total=1995;
+			cout << total << endl;
+	}
+}
+	return 0;
+ }
