@@ -1,0 +1,53 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main ()
+{ 
+float z = 2.5;
+int x;
+int y;
+double V;
+
+cout << "Please enter your x value" << endl;
+cin >> x;
+
+cout << "Please enter your y value" << endl;
+cin >> y;
+
+switch (x)
+{
+	case 1:
+	if ( (y < 5) && (y > 1))
+	{
+		V=(x*y*z);
+}
+else
+{
+	v=(x+y)/z;
+}
+cout << V;
+
+break;
+
+case 2:
+
+	if (y<=5)
+	{
+		v = abs(x-y)/z;
+	}
+	else
+	{
+		V=x-(sqrt(y+z));
+	}
+	cout << V;
+	
+break;
+
+default:
+
+V=(x+y+z);
+cout << "The value of v is " << V <<endl;
+}
+return 0;
+}
