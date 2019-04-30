@@ -1,0 +1,40 @@
+#include <iostream>
+#include <conio.h>
+#include <math.h>
+
+using namespace std;
+
+int main()
+
+{
+	float a, b, r, v, x, y, balance, charge, total;
+	charge = 1.10;
+	a = 35;
+	
+	cout << "Input water bill from last month. ";
+	cin >> y;
+	cout << "Input the amount paid from the water bill last month. ";
+	cin >> b;
+	balance=y-b;
+	
+	cout << "Input water used in gallons ";
+	cin >> x;
+	
+	total=a+(charge*x);
+	
+	if (balance>0)
+	{
+		cout << "Late charge would be added to your bill this month" << endl;
+		v=total+20;
+		cout << "Php " << v << endl;
+	}
+	else if (balance<0)
+	{
+		cout << "Please try again for your balance is an error" << endl;
+	}
+	else
+	{
+		cout << "Php " << total << endl;
+	}
+	return 0;
+}
