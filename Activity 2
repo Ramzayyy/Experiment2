@@ -1,0 +1,169 @@
+#include<iostream>
+#include<iomanip>
+
+using namespace std;
+
+int main()
+{
+	int x,y,z;
+	
+	cout << "Please input your birthday according to the information that is being asked." << endl;
+	cout << "Here is a conversion of months to numbers, since our machine only read numbers" << endl;
+	
+	cout << " " << endl;
+	
+	cout << "January=1" << endl;
+	cout << "February=2" << endl;
+	cout << "March=3" << endl;
+	cout << "April=4" << endl;
+	cout << "May=5" << endl;
+	cout << "June=6" << endl;
+	cout << "July=7" << endl;
+	cout << "August=8" << endl;
+	cout << "September=9" << endl;
+	cout << "October=10" << endl;
+	cout << "November=11" << endl;
+	cout << "December=12" << endl;
+	
+	cout << " " << endl;
+	
+	cout << "We strictly follow the conversion table above for months. Also please avoid putting negative values for years." << endl;
+	cout << "Thank you!" << endl;
+	
+	cout << " " << endl;
+	
+	cout << "Input Month ";
+	cin >> x;
+	cout << "Input the day ";
+	cin >> y;
+	cout << "Input Year ";
+	cin >> z;
+
+	switch(x)
+	{
+		case 1:
+				if(y<1 && y>31)
+				{
+					cout << "Enter a valid date.";
+				}
+				else
+				{
+				cout << "January " << y << ", " << z;
+			}
+				break;
+		case 2:
+				if(y<1 && y>28)
+				{
+					cout << "Enter a valid date.";
+				}
+				else
+				{
+				cout << "February " << y << ", " << z;
+				}
+				break;
+		case 3:
+				if(y<1 && y>31)
+				{
+					cout << "Enter a valid date.";
+				}
+				else
+				{
+				cout << "March " << y << ", " << z;
+				}
+				break;
+				
+		case 4:
+				if(y<1 && y>30)
+				{
+					cout << "Enter a valid date.";
+				}
+				else
+				{
+				cout << "April " << y << ", " << z;
+				}
+				break;
+		case 5:
+				if(y<1 && y>31)
+				{
+					cout << "Enter a valid date.";
+				}
+				else
+				{
+				cout << "May " << y << ", " << z;
+				}
+				break;
+		case 6:
+					if(y<1 && y>30)
+				{
+					cout << "Enter a valid date.";
+				}
+				else
+				{
+				cout << "June " << y << ", " << z;
+				}
+				break;
+		case 7:
+				if(y<1 && y>31)
+				{
+					cout << "Enter a valid date.";
+				}
+				else
+				{
+				cout << "July " << y << ", " << z;
+				}
+				break;
+		case 8:
+				if(y<1 && y>31)
+				{
+					cout << "Enter a valid date.";
+				}
+				else
+				{
+				cout << "August " << y << ", " << z;
+				}
+				break;
+		case 9:
+				if(y<1 && y>30)
+				{
+					cout << "Enter a valid date.";
+				}
+				else
+				{
+				cout << "September " << y << ", " << z;
+				}
+				break;
+		case 10:
+				if(y<1 && y>31)
+				{
+					cout << "Enter a valid date.";
+				}
+				else
+				{
+				cout << "October " << y << ", " << z;
+				}
+				break;
+		case 11:
+				if(y<1 && y>30)
+				{
+					cout << "Enter a valid date.";
+				}
+				else
+				{
+				cout << "November " << y << ", " << z;
+				}
+				break;
+		case 12:
+				if(y<1 && y>31)
+				{
+					cout << "Enter a valid date.";
+				}
+				else
+				{
+				cout << "December " << y << ", " << z;
+				}
+				break;
+		
+	}
+	
+	return 0;
+}
